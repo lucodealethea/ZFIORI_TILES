@@ -5,7 +5,7 @@ What Fiori Apps are installed on my S/4 HANA ?
 How do they relate with Fiori Apps Library ( https://fioriappslibrary.hana.ondemand.com/ ) ?
 How are Tiles and Target Mapping defined ?
 
-This development (ongoing) tries to give some insight and requires load this package with https://abapgit.org/.
+This development (ongoing) tries to give some insight and requires to install this package with https://abapgit.org/.
 
 Create the ZTBC_C_FIORI_APP table then uploading Fiori Apps with SE38 ZTBC_UPL_FIORI_APPS  according to
 
