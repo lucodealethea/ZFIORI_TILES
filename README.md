@@ -13,8 +13,9 @@ https://blogs.sap.com/2020/12/27/sap-fiori-tips-download-list-of-all-fiori-apps-
 
 You could load a higher version if you wanted to compare what's available in your current release versus what's new.
 
-The SQL Gets you the S/4 HANA Tiles and Target Mappings Along with App Names
+The SQL Gets you the S/4 HANA Tiles and Target Mappings Along with App Names installed on your system ( restricted to one catalog) 
+and compares it to the Fiori Apps Library.
 
-Change the line with "ORIG" . "PARENTID" LIKE ( N'%ZBC_TS_FI_GL_DISP%' ) with your own Catalog considering the naming conventions used.
+Change the line with "ORIG" . "PARENTID" LIKE ( N'%ZBC_TS_FI_GL_DISP%' ) with your own Catalog/or Family considering the naming conventions used.
 
-For example Tiles Catalog SAP_TC_FIN_ACC_COMMON has been mocked as ZBC_TS_FI_GL_DISP..
+For example Tiles Catalog SAP_TC_FIN_ACC_COMMON has been mocked as ZBC_TS_FI_GL_DISP...
