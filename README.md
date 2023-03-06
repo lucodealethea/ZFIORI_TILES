@@ -32,3 +32,4 @@ SM30 on /UI2/FLPSETCV SPACES_ENABLE_USER = true
 4. If you want to deactivate the spaces layout completely for now, set SPACES and SPACES_ENABLE_USER to false. Then the home page is always displayed.
 
 https://blogs.sap.com/2020/05/03/manage-spaces-and-pages-for-sap-fiori-launchpad/
+https://help.sap.com/docs/SAP_S4HANA_CLOUD/4fc8d03390c342da8a60f8ee387bca1a/64a5e1675ce7413791a654d2228a90be.html
