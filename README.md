@@ -20,4 +20,15 @@ Change the line with "ORIG" . "PARENTID" LIKE ( N'%ZBC_TS_FI_GL_DISP%' ) with yo
 
 For example Tiles Catalog SAP_TC_FIN_ACC_COMMON has been mocked as ZBC_TS_FI_GL_DISP...
 
-In order for the end-users to be able to view the spaces SM30 on /UI2/FLPSETCV SPACES_ENABLE_USER = true
+/UI2/FLP_CUS_CONF ( /UI2/FLPSETCV Client Only Configuration while /UI2/FLP_SYS_CONF is Cross-Client Configuration /UI2/FLPSETV)
+
+1. If all users should see the spaces layout and be able to switch between the layouts, 
+set SPACES and SPACES_ENABLE_USER to true.
+SM30 on /UI2/FLPSETCV SPACES_ENABLE_USER = true
+2. If all users should only see the spaces layout, set SPACES to true, and set SPACES_ENABLE_USER to false.
+
+3. If all users should see the home page by default but be able to switch between the layouts, set SPACES to false, and set SPACES_ENABLE_USER to true.
+
+4. If you want to deactivate the spaces layout completely for now, set SPACES and SPACES_ENABLE_USER to false. Then the home page is always displayed.
+
+https://blogs.sap.com/2020/05/03/manage-spaces-and-pages-for-sap-fiori-launchpad/
