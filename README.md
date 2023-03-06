@@ -19,3 +19,5 @@ and compares it to the Fiori Apps Library.
 Change the line with "ORIG" . "PARENTID" LIKE ( N'%ZBC_TS_FI_GL_DISP%' ) with your own Catalog/or Family considering the naming conventions used.
 
 For example Tiles Catalog SAP_TC_FIN_ACC_COMMON has been mocked as ZBC_TS_FI_GL_DISP...
+
+In order for the end-users to be able to view the spaces SM30 on /UI2/FLPSETCV SPACES_ENABLE_USER = true
