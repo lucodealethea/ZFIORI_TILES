@@ -1,0 +1,110 @@
+@EndUserText.label : 'Fiori Apps from Fiori Apps Library'
+//https://fioriappslibrary.hana.ondemand.com
+@AbapCatalog.enhancement.category : #EXTENSIBLE_CHARACTER_NUMERIC
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #ALLOWED
+define table ztbc_c_fiori_app {
+  key mandt                      : mandt not null;
+  @EndUserText.label : 'Fiori Id'
+  key fiori_id                   : abap.char(50) not null;
+  @EndUserText.label : 'Line of Business'
+  line_of_business               : abap.char(50);
+  @EndUserText.label : 'Scope Item'
+  scope_item                     : abap.char(100);
+  @EndUserText.label : 'Role Name'
+  role_name                      : abap.char(50);
+  @EndUserText.label : 'App Name'
+  app_name                       : abap.char(50);
+  @EndUserText.label : 'Application Type'
+  application_type               : abap.char(50);
+  @EndUserText.label : 'App_Launcher Title Subtitle'
+  app_launcher_title_subtitle    : abap.char(100);
+  @EndUserText.label : 'Lighthouse'
+  lighthouse                     : abap.char(50);
+  @EndUserText.label : 'Application Component'
+  application_component          : abap.char(50);
+  @EndUserText.label : 'UIi Technology'
+  ui_technology                  : abap.char(50);
+  @EndUserText.label : 'Device Type'
+  device_type                    : abap.char(50);
+  @EndUserText.label : 'Product Category'
+  product_category               : abap.char(50);
+  @EndUserText.label : 'Database'
+  database_id                    : abap.char(50);
+  @EndUserText.label : 'Frontend Software Component'
+  frontend_software_component    : abap.char(50);
+  @EndUserText.label : 'Frontend Min Sp'
+  frontend_min_sp                : abap.char(50);
+  @EndUserText.label : 'Backend Software Componant Versions'
+  backend_software_comp_versions : abap.char(50);
+  @EndUserText.label : 'Backend Min Sp'
+  backend_min_sp                 : abap.char(50);
+  @EndUserText.label : 'Hana Software Componant Versions'
+  hana_software_comp_versions    : abap.char(50);
+  @EndUserText.label : 'Hana Min Sp'
+  hana_min_sp                    : abap.char(50);
+  @EndUserText.label : 'Frontend Product Version'
+  frontend_product_version       : abap.char(50);
+  @EndUserText.label : 'Product Version Name Backend'
+  product_version_name_backend   : abap.char(50);
+  @EndUserText.label : 'Hana Product Version'
+  hana_product_version           : abap.char(50);
+  @EndUserText.label : 'Frontend Product Version Stack'
+  frontend_product_version_stack : abap.char(50);
+  @EndUserText.label : 'Backend Product Version Stack'
+  backend_product_version_stack  : abap.char(50);
+  @EndUserText.label : 'Hana Product Version Stack'
+  hana_product_version_stack     : abap.char(50);
+  @EndUserText.label : 'Note Collection'
+  note_collection                : abap.char(50);
+  @EndUserText.label : 'Semantic Object Action'
+  semantic_object_action         : abap.char(200);
+  @EndUserText.label : 'Technical Catalog Name'
+  technical_catalog_name         : abap.char(100);
+  @EndUserText.label : 'Technical Catalog Description'
+  technical_catalog_description  : abap.char(200);
+  @EndUserText.label : 'Business Catalog Name'
+  business_catalog_name          : abap.char(100);
+  @EndUserText.label : 'Business Catalog Description'
+  business_catalog_description   : abap.char(200);
+  @EndUserText.label : 'Business Group Name'
+  business_group_name            : abap.char(100);
+  @EndUserText.label : 'Business Group Description'
+  business_group_description     : abap.char(200);
+  @EndUserText.label : 'Leading Business Role Name'
+  leading_business_role_name     : abap.char(50);
+  @EndUserText.label : 'Leading Business Role Description'
+  leading_business_role_descr    : abap.char(50);
+  @EndUserText.label : 'Additional Business Role Name'
+  additional_business_role_name  : abap.char(200);
+  @EndUserText.label : 'Additional Business Role Description'
+  additional_business_role_descr : abap.char(200);
+  @EndUserText.label : 'Industry'
+  industry                       : abap.char(50);
+  @EndUserText.label : 'Gtm App Description'
+  gtm_app_description            : abap.char(1000);
+  @EndUserText.label : 'Bsp Name'
+  bsp_name                       : abap.char(50);
+  @EndUserText.label : 'Bsp Application Url'
+  bsp_application_url            : abap.char(50);
+  @EndUserText.label : 'Sapui5 Component Id'
+  sapui5_component_id            : abap.char(50);
+  @EndUserText.label : 'Primary Odata Sservice Name'
+  primary_odata_service_name     : abap.char(50);
+  @EndUserText.label : 'Primary Odataservice Version'
+  primary_odataservice_version   : abap.char(50);
+  @EndUserText.label : 'Additional Oodata Sservices'
+  additional_odata_services      : abap.char(100);
+  @EndUserText.label : 'Additional Odataservices Version'
+  additional_odataservices_vers  : abap.char(50);
+  @EndUserText.label : 'Bex Query Name'
+  bex_query_name                 : abap.char(50);
+  @EndUserText.label : 'Leading Transaction Codes'
+  leading_transaction_codes      : abap.char(50);
+  @EndUserText.label : 'Wda Configuration'
+  wda_configuration              : abap.char(50);
+  @EndUserText.label : 'Link'
+  link                           : abap.char(200);
+
+}
