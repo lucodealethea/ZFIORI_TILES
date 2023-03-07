@@ -1,6 +1,6 @@
 # ZFIORI_TILES
 
-What Fiori Catalog have been created ? 
+What Fiori Catalogs have been created ? 
 What Fiori Apps are installed on my S/4 HANA ? 
 How do they relate with Fiori Apps Library ( https://fioriappslibrary.hana.ondemand.com/ ) ?
 How are Tiles and Target Mapping defined ?
