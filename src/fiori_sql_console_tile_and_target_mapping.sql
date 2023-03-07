@@ -219,25 +219,10 @@ LEFT OUTER JOIN cte_fioriapp_pfcg_role AS PFCG
 ON PFCG.CATALOG_NAME = I.TECHNICAL_CATALOG_NAME
 
 )
-,
-cte_pfcg_roles as
-(
-SELECT J.* 
-FROM cte_join_with_library AS J
-LEFT OUTER JOIN "/UI2/PB_C_PAGEMT" AS PT 
-ON ID_TYPE||':'||J.CATALOG_PAGE = PT.ID AND PT.MANDT = '600' AND PT.LANGU = 'E'  
-WHERE I_TECHNICAL_CATALOG_NAME LIKE 'ZBC_TS%'
-)
-,
-cte_result as
-(
 SELECT
 PT.TITLE, J.*
-FROM cte_pfcg_roles as J
+FROM cte_join_with_library AS J
 LEFT OUTER JOIN "/UI2/PB_C_PAGEMT" AS PT 
 ON J.ID = PT.ID AND PT.MANDT = '600' AND PT.LANGU = 'E'
-)
-SELECT
-*
-FROM cte_temp
+WHERE I_TECHNICAL_CATALOG_NAME LIKE 'ZBC_TS%'
 ;
